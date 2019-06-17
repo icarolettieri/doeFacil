@@ -144,98 +144,71 @@ $(document).ready(function(){
                     </table>
                 </div>
             </div>
+
         	<!-- Edit Modal HTML -->
-        	<div id="addEmployeeModal" class="modal fade">
-        		<div class="modal-dialog">
-        			<div class="modal-content">
-        <form method="POST" action="../php/cadastrar.php">
-        <h4>Realizar Pre-Cadastro da Instituição</h4><br>
-        <label>Nome:
-        <input name="nome" class="form-control" type="text" id="nome" size="60" required/></label><br />
+          <div id="addEmployeeModal" class="modal fade">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <form method="POST" action="cadastrar.php">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Adicionar Instituição</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                          <label>Nome:
+                          <input name="nome" class="form-control" type="text" id="nome" size="60" required/></label><br />
 
-        <label>Responsavel:
-        <input name="responsavel" class="form-control" type="text" id="responsavel" size="60" required/></label><br />
+                          <label>Responsavel:
+                          <input name="responsavel" class="form-control" type="text" id="responsavel" size="60" required/></label><br />
 
-        <label>Cep:
-        <input name="cep" class="form-control" type="text" id="cep" value="" size="10" maxlength="9"
-               onblur="pesquisacep(this.value);" required/></label>
+                          <label>Cep:
+                          <input name="cep" class="form-control" type="text" id="cep" value="" size="10" maxlength="9"
+                                 onblur="pesquisacep(this.value);" required/></label>
 
-        <label>Bairro:
-        <input name="bairro" class="form-control" type="text" id="bairro" size="40" readonly="disabled"/></label><br />
+                          <label>Bairro:
+                          <input name="bairro" class="form-control" type="text" id="bairro" size="40" readonly="disabled"/></label><br />
 
-        <label>Rua:
-        <input name="rua" class="form-control" type="text" id="rua" size="60" readonly="disabled"/></label><br />
+                          <label>Rua:
+                          <input name="rua" class="form-control" type="text" id="rua" size="60" readonly="disabled"/></label><br />
 
-        <label>Numero:
-        <input name="num_rua" class="form-control" type="number" id="num_rua" size="10" required/></label><br />
+                          <label>Numero:
+                          <input name="num_rua" class="form-control" type="number" id="num_rua" size="10" required/></label><br />
 
-        <label>Cidade:
-        <input name="cidade" class="form-control" type="text" id="cidade" size="40" readonly="disabled"/></label><br />
+                          <label>Cidade:
+                          <input name="cidade" class="form-control" type="text" id="cidade" size="40" readonly="disabled"/></label><br />
 
-        <label>Estado:
-        <input name="uf" class="form-control" type="text" id="uf" size="2" readonly="disabled"/></label><br />
+                          <label>Estado:
+                          <input name="uf" class="form-control" type="text" id="uf" size="2" readonly="disabled"/></label><br />
 
-        <label>E-mail:
-        <input name="email" class="form-control" type="text" id="email" size="40" required/></label><br />
+                          <label>E-mail:
+                          <input name="email" class="form-control" type="text" id="email" size="40" required/></label><br />
 
-        <label>Telefone Fixo:
-        <input name="tel_fixo" class="form-control" type="text" id="tel_fixo" size="40" required/></label><br />
+                          <label>Telefone Fixo:
+                          <input name="tel_fixo" class="form-control" type="text" id="tel_fixo" size="40" required/></label><br />
 
-        <label>Telefone Celular:
-        <input name="tel_celular" class="form-control" type="text" id="tel_celular" size="40" /></label><br />
+                          <label>Telefone Celular:
+                          <input name="tel_celular" class="form-control" type="text" id="tel_celular" size="40" /></label><br />
 
-        <label>Descrição:
-        <input name="descricao" class="form-control" type="text" id="descricao" size="40" /></label><br />
+                          <label>Descrição:
+                          <input name="descricao" class="form-control" type="text" id="descricao" size="40" /></label><br />
 
-        <label>Horario de Funcionamento</label><br />
-        <label>Inicio
-        <input name="hr_inicio" type="time" class="form-control" type="text" id="hr_inicio" size="40" required/></label>
+                          <label>Horario de Funcionamento</label><br />
+                          <label>Inicio
+                          <input name="hr_inicio" type="time" class="form-control" type="text" id="hr_inicio" size="40" required/></label>
 
-        <label>Fim
-        <input name="hr_fim" type="time" class="form-control" type="text" id="hr_fim" size="40" required/></label><br />
-
-        <input type="submit" class="btn btn-success" value="Cadastrar">
-        <br><br>
-        </div>
-      </form>
+                          <label>Fim
+                          <input name="hr_fim" type="time" class="form-control" type="text" id="hr_fim" size="40" required/></label><br />
+                          <div class="modal-footer">
+                            <input type="submit" class="btn btn-success" value="Adicionar">
+                            <a href="index.php" class="text-decoration-none"> <input type="button" class="btn btn-success" value="Cancelar"> </a>
+                          </div>
+                          <br><br>
+                          </form>
+                        </div>
+                      </div>
+                  </div>
         			</div>
-        		</div>
-        	</div>
-        	<!-- Edit Modal HTML -->
-        	<div id="editEmployeeModal" class="modal fade">
-        		<div class="modal-dialog">
-        			<div class="modal-content">
-        				<form>
-        					<div class="modal-header">
-        						<h4 class="modal-title">Editar Instituição</h4>
-        						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        					</div>
-        					<div class="modal-body">
-        						<div class="form-group">
-        							<label>Nome</label>
-        							<input type="text" class="form-control" required>
-        						</div>
-        						<div class="form-group">
-        							<label>Email</label>
-        							<input type="email" class="form-control" required>
-        						</div>
-        						<div class="form-group">
-        							<label>Endereço</label>
-        							<textarea class="form-control" required></textarea>
-        						</div>
-        						<div class="form-group">
-        							<label>Telefone</label>
-        							<input type="text" class="form-control" required>
-        						</div>
-        					</div>
-        					<div class="modal-footer">
-        						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">
-        						<input type="submit" class="btn btn-success" value="Salvar">
-        					</div>
-        				</form>
-        			</div>
-        		</div>
-        	</div>
+
         	<!-- Delete Modal HTML -->
         	<div id="deleteEmployeeModal" class="modal fade">
         		<div class="modal-dialog">

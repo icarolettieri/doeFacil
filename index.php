@@ -109,7 +109,12 @@
       <div class="col-lg-6 text-center">
         <br>
         <h2>O que fazemos</h2>
-        <p>Texto falando sobre o projeto.</p>
+        <p>Nosso projeto foi criado pensando nas pessoas que querem
+          ajudar mas não sabe como, onde e quando.</p>
+        <p>
+          Desta forma foi nasceu o DoeFácil, para você, que deseja ajudar
+          nos vamos de mostrar como uma simples ação faz toda a diferença.
+        </p>
       </div>
       <div class="col-lg-6">
         <img class="img-fluid rounded" style="height: 250px; width: 330px" src="img/doacao.png" alt="">
@@ -120,7 +125,8 @@
             <h4 class="card-title">
               <p class="text-success">Missão</p>
             </h4>
-            <p class="card-text">Aqui vamos falar um pouco da missão.</p>
+            <p class="card-text">DoeFácil tem a missão de agregar valor para sociedade,
+              com sistema de consulta para doações.</p>
           </div>
         </div>
       </div>
@@ -130,7 +136,8 @@
             <h4 class="card-title">
               <p class="text-success">Visão</p>
             </h4>
-            <p class="card-text">Aqui vamos falar um pouco da visão.</p>
+            <p class="card-text">Nossa visão é ajudar a sociedade com meio de crescimento amplo
+              para que seja criado novos projetos.</p>
           </div>
         </div>
       </div>
@@ -140,7 +147,8 @@
             <h4 class="card-title">
               <p class="text-success">Valores</p>
             </h4>
-            <p class="card-text">Aqui vamos falar um pouco dos valores.</p>
+            <p class="card-text">A DoeFácil tem os valores a pequenas coisas, pequenas ações, pequenas ajudas,
+              pequenas doações que torna uma sociedade melhor para o mundo.</p>
           </div>
         </div>
       </div>
@@ -149,7 +157,7 @@
 
     <br><hr>
 
-    <!-- Portfolio Section -->
+    <!-- Portfolio Section
 
     <h2 class="my-5">Conheça os Projetos</h2>
 
@@ -189,9 +197,9 @@
       </div>
       </div>
 
-      <br><hr>
+      <br><hr>-->
 
-      <!-- Portfolio Section -->
+      <!-- Portfolio Section
 
       <h2 class="my-5">Dicas</h2>
 
@@ -229,7 +237,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
 
     <!-- /.row -->
     <p></p>

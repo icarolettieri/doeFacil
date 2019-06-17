@@ -56,7 +56,13 @@
   <div class="container">
     <br><br>
     <h1 class="my-5">Como Doar</h1>
-    <p>Um Breve texto falando como é realizado as doações.</p>
+    <p class="col-6">Nesta sessão você irá localizar a Instituição de doção de melhor acesso para você,
+      nos campos abaixo você pode selecionar por onde deseja pesquisar, se é pelo Bairro, Cidade, Estado,
+      apos escolher por onde deseja pesquisar, no campo ao lado você irá digitar o nome do bairro completo (Ex.: Eldorado),
+      ou nome da cidade (Ex.: Contagem), ou o RG da cidade (Ex.: MG).
+      Abaixo será mostrado os dados de resultado com as informações da Instituição para que você entre em contato com a
+      Instituição para recolher melhores informações.
+    </p>
 
     <!-- Portfolio Section -->
     <br><br>
@@ -81,7 +87,7 @@
     <br>
      <hr>
      <br>
-    
+
     <?php
         include_once 'php/class/Instituicao.class.php';
         $inst = new Instituicao();
@@ -105,8 +111,8 @@
 
           }
         }
-    ?>  
-     
+    ?>
+
 
 
   </div>

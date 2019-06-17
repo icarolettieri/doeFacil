@@ -155,8 +155,6 @@
 
     </div>
 
-    <br><hr>
-
     <!-- Portfolio Section
 
     <h2 class="my-5">Conheça os Projetos</h2>

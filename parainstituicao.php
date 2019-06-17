@@ -59,7 +59,21 @@
   <div class="container">
     <br><br>
     <h1 class="my-5">Faça parte desta historia!</h1>
-    <p class="my-8">Um Breve texto falando como é realizado o cadastro, termos e condições.</p><br><br>
+    <p class="col-8">
+      Agradecemos pelo seu interesse de se juntar a essa historia, juntos vamos tornar a vida de muitos
+      melhor.
+    </p><br>
+    <p class="col-8">
+      Para participar do DoeFácil, é nescessario realizar o pre-cadastro com os dados a baixo,
+      lembrando que os dados devem ser verdadeiros, pois dentro de 48 horas entraremos em contato
+      para realizar uma vistoria no local e recolher melhores informações sobre sua Instituição de Caridade.
+      Após validar as informações, seu cadastro sera liberado para que os usuários consigam te localizar,
+      desta forma fica o dever do usuário entrar em contato com você (Instituição) e o seu dever de combinar com o usuários
+      a melhor forma de doação, data, horario e etc.
+    </p>
+
+
+    <br><br>
 </div>
     <!-- Portfolio Section -->
 <div class="container">

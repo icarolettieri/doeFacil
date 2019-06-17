@@ -56,10 +56,13 @@
   <div class="container">
     <br><br>
     <h1 class="my-5">Como Doar</h1>
-    <p class="col-8">Nesta sessão você irá localizar a Instituição de doção de melhor acesso para você,
+    <p class="col-8">
+      Nesta sessão você irá localizar a Instituição de doção de melhor acesso para você,
       nos campos abaixo você pode selecionar por onde deseja pesquisar, se é pelo Bairro, Cidade, Estado,
       apos escolher por onde deseja pesquisar, no campo ao lado você irá digitar o nome do bairro completo (Ex.: Eldorado),
       ou nome da cidade (Ex.: Contagem), ou o RG da cidade (Ex.: MG).
+    </p>
+    <p class="col-8">
       Abaixo será mostrado os dados de resultado com as informações da Instituição para que você entre em contato com a
       Instituição para recolher melhores informações.
     </p>

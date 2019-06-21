@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 21-Jun-2019 às 19:38
+-- Generation Time: 17-Jun-2019 às 16:23
 -- Versão do servidor: 10.1.39-MariaDB
 -- versão do PHP: 7.3.5
 
@@ -52,11 +52,14 @@ CREATE TABLE `instituicao` (
 --
 
 INSERT INTO `instituicao` (`id_inst`, `nome_inst`, `nome_respons`, `rua`, `numero`, `bairro`, `cidade`, `estado`, `email`, `telefone`, `celular`, `descricao`, `horario_abertura`, `horario_fechamento`, `cep`, `vistoria`) VALUES
-(15, 'Igreja Matriz de SÃ£o GonÃ§alo', 'Ãcaro Lettieri EmÃ­dio Pereira', 'PraÃ§a Silviano BrandÃ£o', 40, 'Centro', 'Contagem', 'MG', 'igreja.sao.goncalo@gmail.com', '(31) 3398-1504', '', 'Esta instituiÃ§Ã£o foi feita para agregar valor pa', '08:00', '17:00', '32017680', 1),
-(16, 'ParÃ³quia Santa Cruz', 'LuÃ­s Otavio', 'PraÃ§a Pedro Lessa', 22, 'Vera Cruz', 'Belo Horizonte', 'MG', 'paroquia.santa.cruz@gmail.com', '(31) 3483-1133', '', 'Esta instituiÃ§Ã£o foi feita para agregar valor pa', '10:00', '19:00', '30285330', 1),
-(17, 'CongregaÃ§Ã£o CristÃ£ no Brasil', 'Diego da Silva', 'Rua Padre JosÃ© Maria de Man', 1572, 'Monte Castelo', 'Contagem', 'MG', 'congregacao.cb@gmail.com', '(31)3301-2089', '(31)98805-3387', 'Esta igreja Ã© para realizar doaÃ§Ãµes para pessoa', '10:00', '17:00', '32285180', 1),
-(18, 'E. E. Helena Guerra', 'Silas GonÃ§alves', 'Rua Madre Margherita Fontanarosa', 271, 'Eldorado', 'Contagem', 'MG', 'escola.8753@educacao.mg.gov.br', '(31) 3391-5620', '(31) 99876-5620', 'Essa escola esta unida na aÃ§Ã£o para fazer um bem', '07:00', '19:00', '32315180', 1),
-(19, 'E. M. Ãpio Cardoso', 'Dener Ramos', 'Rua VL - 30', 30, 'Nova Contagem', 'Contagem', 'MG', 'apiocardoso@gmail.com', '(31) 3352-5773', '', '', '07:00', '19:00', '32050090', 1);
+(7, 'Igor Siqueira da Silva', 'Igor', 'Rua Esmeraldas', 32, 'sao luiz', 'Contagem', 'MG', 'igorsiqueira.adm@gmail.com', '31994032335', '31994032335', 'sbfisbfidsbfuisdfb', '10:00', '11:00', '32071-156', 1),
+(8, 'fulanoDoa', 'fulano', 'Rua Ãgata', 123123, 'Sapucaia II', 'Contagem', 'MG', 'funaluno@gmail.com', '31994032335', '32344678', 'vfbpvjbvldwvlfldfj', '08:10', '22:00', '32071157', 1),
+(9, 'doe', 'joaquin', 'Rua Esmeraldas', 34, 'Sapucaia II', 'Contagem', 'SP', 'joaquin@gmail.com', '3123343234', '1223234455', 'hipsvhsidvhsip', '09:00', '22:00', '32071-156', 1),
+(10, 'teste', 'Rosangela de Fatima EmÃ­dio', 'Rua Dom Geraldo Fernandes Bijos', 618, 'Santa Helena', 'Contagem', 'MG', 'icaro_lettieri@live.com', '31973085733', '31973085733', 'Esta instituiÃ§Ã£o foi feita para agregar valor pa', '10:00', '17:00', '32015200', 1),
+(11, 'teste', 'teste', 'Rua Dom Geraldo Fernandes Bijos', 618, 'Santa Helena', 'Contagem', 'MG', 'teste@teste.com', '31973085733', '31973085733', 'Esta instituiÃ§Ã£o foi feita para agregar valor pa', '10:10', '12:12', '32015200', 0),
+(12, 'Ãcaro Lettieri EmÃ­dio Pereira', 'teste', 'Rua Dom Geraldo Fernandes Bijos', 123, 'Santa Helena', 'Contagem', 'MG', 'teste@teste.com', '31973085733', '31973085733', 'Esta instituiÃ§Ã£o foi feita para agregar valor pa', '10:00', '12:00', '32015200', 0),
+(13, 'Ãcaro Lettieri EmÃ­dio Pereira', 'Rosangela de Fatima EmÃ­dio', 'Rua Dom Geraldo Fernandes Bijos', 123, 'Santa Helena', 'Contagem', 'MG', 'icaro_lettieri@live.com', '31973085733', '31973085733', 'Esta instituiÃ§Ã£o foi feita para agregar valor pa', '12:00', '15:00', '32015200', 0),
+(14, 'Ãcaro Lettieri EmÃ­dio Pereira', 'Rosangela de Fatima EmÃ­dio', 'Rua Dom Geraldo Fernandes Bijos', 123, 'Santa Helena', 'Contagem', 'MG', 'teste@teste.com', '31973085733', '31973085733', 'Esta instituiÃ§Ã£o foi feita para agregar valor pa', '02:00', '05:00', '32015200', 0);
 
 -- --------------------------------------------------------
 
@@ -102,7 +105,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT for table `instituicao`
 --
 ALTER TABLE `instituicao`
-  MODIFY `id_inst` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id_inst` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `usuarios`

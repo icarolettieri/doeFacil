@@ -307,8 +307,8 @@
 					            '<h4 class="card-title">'.
 												'<p>'.$instituicao['nome_inst'].'</p>'.'</h4>'.
 					              '<p>Responsavel: '.$instituicao['nome_respons'].'</p>'.
-					              '<p>'.$instituicao['rua'].','.$instituicao['numero'].
-												' '. $instituicao['bairro'].'-'.$instituicao['cidade'].'</p>'.
+					              '<p>'.$instituicao['rua'].', '.$instituicao['numero'].
+												'<br>'.$instituicao['bairro'].' - '.$instituicao['cidade'].'</p>'.
 								  '<p> Telefone: '.$instituicao['telefone'].'</p>'.
 									'<p> Celular: '.$instituicao['celular'].'</p>'.
 								  '<p> Horario: '.$instituicao['horario_abertura'].'-'.

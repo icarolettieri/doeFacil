@@ -27,22 +27,23 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg bg-white fixed-top nav-pills border-bottom" style="border-color: #74cfae">
+  <nav class="navbar bg-white navbar-expand-md fixed-top navbar-light nav-pills border-bottom" style="border-color: #74cfae">
     <div class="container">
-      <a class="navbar-brand" href="index.php"><img src="img\logo.png" class="float-left" alt="Logo DoeFácil"></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+    <a class="navbar-brand" href="index.php"><img src="img\logo.png" class="float-left" alt="Logo DoeFácil"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+    aria-controls="navbarToggler" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon" style="border-color: success"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
             <a class="nav-link text-success" href="index.php">Início</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-success" href="comodoar.php">Como doar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active bg-success" href="parainstituicao.php">Para Instituições</a>
+            <a class="nav-link active bg-success text-white" href="parainstituicao.php">Para Instituições</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-success" href="sobre.php">Sobre nós</a>
@@ -50,26 +51,29 @@
           <li class="nav-item">
             <a class="nav-link text-success" href="contato.php">Contato</a>
           </li>
-        </ul>
-      </div>
+      </ul>
+    </div>
     </div>
   </nav>
+  <!-- /.nav -->
 
   <!-- Page Content -->
   <div class="container">
     <br><br>
     <h1 class="my-5">Faça parte desta historia!</h1>
     <p class="col-8">
-      Agradecemos pelo seu interesse de se juntar a essa historia, juntos vamos tornar a vida de muitos
-      melhor.
+      Agradecemos pelo seu interesse de se juntar a essa história, juntos vamos transformar.
     </p><br>
     <p class="col-8">
-      Para participar do DoeFácil, é nescessario realizar o pre-cadastro com os dados a baixo,
-      lembrando que os dados devem ser verdadeiros, pois dentro de 48 horas entraremos em contato
-      para realizar uma vistoria no local e recolher melhores informações sobre sua Instituição de Caridade.
-      Após validar as informações, seu cadastro sera liberado para que os usuários consigam te localizar,
-      desta forma fica o dever do usuário entrar em contato com você (Instituição) e o seu dever de combinar com o usuários
-      a melhor forma de doação, data, horario e etc.
+      Para participar do DoeFácil, é necessário realizar o pré-cadastro com os dados a baixo, lembrando que os dados devem
+      ser verdadeiros, pois dentro de 48 horas entraremos em contato para realizar uma vistoria no local e recolher melhores
+      informações sobre sua Instituição de Caridade.
+    </p>
+    <p class="col-8">
+      Após validar as informações, seu cadastro será liberado para que os usuários consigam lhe localizar,
+      desta forma fica o dever do usuário entrar em contato com você (Instituição) e o seu dever de combinar com o usuário
+      a melhor forma de doação, data, horário e etc.
+
     </p>
 
 

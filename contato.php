@@ -24,15 +24,16 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg bg-white fixed-top nav-pills border-bottom" style="border-color: #74cfae">
+  <nav class="navbar bg-white navbar-expand-md fixed-top navbar-light nav-pills border-bottom" style="border-color: #74cfae">
     <div class="container">
-      <a class="navbar-brand" href="index.php"><img src="img\logo.png" class="float-left" alt="Logo DoeFácil"></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+    <a class="navbar-brand" href="index.php"><img src="img\logo.png" class="float-left" alt="Logo DoeFácil"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+    aria-controls="navbarToggler" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon" style="border-color: success"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
             <a class="nav-link text-success" href="index.php">Início</a>
           </li>
           <li class="nav-item">
@@ -45,14 +46,15 @@
             <a class="nav-link text-success" href="sobre.php">Sobre nós</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active bg-success" href="contato.php">Contato</a>
+            <a class="nav-link active bg-success text-white" href="contato.php">Contato</a>
           </li>
-        </ul>
-      </div>
+      </ul>
+    </div>
     </div>
   </nav>
+  <!-- /.nav -->
 
-
+</br></br>
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">

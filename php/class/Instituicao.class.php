@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include_once 'Banco.class.php';
 	class Instituicao extends Banco{
 
@@ -43,7 +43,7 @@
 				}else{
 					echo "O banco esta vazio";
 				}
-				
+
 			}else{
 				echo "Erro, a busca não deu certo";
 			}
@@ -64,7 +64,7 @@
 				if(!empty($dados)){
 					return $dados;
 				}
-				
+
 			}
 		}
 
@@ -83,7 +83,7 @@
 				if(!empty($dados)){
 					return $dados;
 				}
-				
+
 			}
 		}
 
@@ -102,7 +102,7 @@
 				if(!empty($dados)){
 					return $dados;
 				}
-				
+
 			}
 		}
 
@@ -122,7 +122,7 @@
 					echo $sql."<br>";
 					$status = 0;
 					$teste = "teste";
-					//print_r($dados);	
+					//print_r($dados);
 					$sql = $this->pdo->prepare($sql);
 					$sql->bindValue(':nome_inst',$dados['nome']);
 					$sql->bindValue(':nome_respons',$dados['responsavel']);
@@ -144,15 +144,15 @@
 						echo "Funcionou";
 					}else{
 						echo "Deu erro ao executar";
-					}	
-					
-			}else{				
+					}
+
+			}else{
 				echo "Os dados foram vazios";
 			}
 		}
 
 		public function deletarInst($value)
-		{	
+		{
 			if (!empty($value)) {
 				$sql = "DELETE FROM instituicao WHERE id_inst = :id_inst";
 				$sql = $this->pdo->prepare($sql);
@@ -160,11 +160,11 @@
 				if ($sql->execute()) {
 					# code...
 					echo "excluido";
-				}		
+				}
 			}else{
 				echo "O valor veio vazio";
 			}
-					
+
 		}
 
 		public function liberarInstituicao($id_inst)
@@ -185,11 +185,11 @@
 		}
 
 		public function atualizar($value)
-		{	
+		{
 			//print_r($value);
 			if (!empty($value['id_inst'])) {
 				# code...
-			
+
 				$sql = "UPDATE instituicao SET nome_inst = :nome_inst, nome_respons = :nome_respons, rua = :rua, numero = :numero, bairro = :bairro, cidade = :cidade, estado = :estado, email = :email, telefone = :telefone, celular = :celular, descricao = :descricao, horario_abertura = :horario_abertura, horario_fechamento = :horario_fechamento, cep = :cep WHERE id_inst = :id_inst";
 				$sql = $this->pdo->prepare($sql);
 				$sql->bindValue(':nome_inst',$value['nome_inst']);
@@ -234,7 +234,7 @@
 					}else{
 						echo "O banco esta vazio";
 					}
-					
+
 				}else{
 					echo "Erro, a busca não deu certo";
 				}
@@ -298,19 +298,22 @@
 					<div class="row">';
 				foreach ($value as $instituicao) {
 					//Esta string e que será escrita na pagina
-					$str = 
+					$str =
 					'
 						<div class="col-lg-4 col-sm-6 portfolio-item">'.
 					        '<div class="card h-100">'.
 					          '<a href="#"><img class="card-img-top" style="height: 250px; width: max" src="img/img.jpg" alt=""></a>'.
 					          '<div class="card-body">'.
 					            '<h4 class="card-title">'.
-					              '<p> Responsavel: '.$instituicao['nome_respons'].'</p>'.
-					              '<p> Estado: '.$instituicao['estado'].'</p>'.
-								  '<p> Cidade: '.$instituicao['cidade'].'</p>'.
-								  '<p> Bairro: '.$instituicao['bairro'].'</p>'.
-								  '<p> Rua: '.$instituicao['rua'].'</p>'.
-					            '</h4>
+												'<p>'.$instituicao['nome_inst'].'</p>'.'</h4>'.
+					              '<p>Responsavel: '.$instituicao['nome_respons'].'</p>'.
+					              '<p>'.$instituicao['rua'].','.$instituicao['numero'].
+												' '. $instituicao['bairro'].'-'.$instituicao['cidade'].'</p>'.
+								  '<p> Telefone: '.$instituicao['telefone'].'</p>'.
+									'<p> Celular: '.$instituicao['celular'].'</p>'.
+								  '<p> Horario: '.$instituicao['horario_abertura'].'-'.
+									$instituicao['horario_fechamento'].'</p>'.
+					            '
 					           </div>
 					        </div>
 					    </div>';

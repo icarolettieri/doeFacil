@@ -18,25 +18,27 @@
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4d5cbafde0.js"></script>
 
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg bg-white fixed-top nav-pills border-bottom" style="border-color: #74cfae">
+  <nav class="navbar bg-white navbar-expand-md fixed-top navbar-light nav-pills border-bottom" style="border-color: #74cfae">
     <div class="container">
-      <a class="navbar-brand" href="index.php"><img src="img\logo.png" class="float-left" alt="Logo DoeFácil"></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+    <a class="navbar-brand" href="index.php"><img src="img\logo.png" class="float-left" alt="Logo DoeFácil"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+    aria-controls="navbarToggler" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon" style="border-color: success"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
             <a class="nav-link text-success" href="index.php">Início</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active bg-success" href="comodoar.php">Como doar</a>
+            <a class="nav-link active bg-success text-white" href="comodoar.php">Como doar</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-success" href="parainstituicao.php">Para Instituições</a>
@@ -47,17 +49,18 @@
           <li class="nav-item">
             <a class="nav-link text-success" href="contato.php">Contato</a>
           </li>
-        </ul>
-      </div>
+      </ul>
+    </div>
     </div>
   </nav>
+  <!-- /.nav -->
 
   <!-- Page Content -->
   <div class="container">
     <br><br>
     <h1 class="my-5">Como Doar</h1>
     <p class="col-8">
-      Nesta sessão você irá localizar a Instituição de doção de melhor acesso para você,
+      Nesta sessão você irá localizar a Instituição de doação de melhor acesso para você,
       nos campos abaixo você pode selecionar por onde deseja pesquisar, se é pelo Bairro, Cidade, Estado,
       apos escolher por onde deseja pesquisar, no campo ao lado você irá digitar o nome do bairro completo (Ex.: Eldorado),
       ou nome da cidade (Ex.: Contagem), ou o RG da cidade (Ex.: MG).
@@ -82,8 +85,10 @@
         <div class="col-5">
           <input name="pesquisa" type="text" id="inputPesquisa" class="form-control" placeholder="Digite sua pesquisa: Cidade ou Bairro ou Estado. Ex: MG">
         </div>
-        <div class="col-2">
-          <button class="btn btn-success btn-block text-uppercase" type="submit">Pesquisar</button>
+        <div class="col-3">
+          <button class="btn btn-success" type="submit">
+            <i class="fas fa-search-location fa-lg"></i>
+          </button>
         </div>
       </div>
     </form>

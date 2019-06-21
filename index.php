@@ -29,7 +29,7 @@
     <a class="navbar-brand" href="index.php"><img src="img\logo.png" class="float-left" alt="Logo DoeFácil"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
     aria-controls="navbarToggler" aria-expanded="false" aria-label="Alterna navegação">
-      <span class="navbar-toggler-icon" style="border-color: success"></span>
+      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarToggler">
       <ul class="navbar-nav ml-auto">

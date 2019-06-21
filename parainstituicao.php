@@ -121,7 +121,7 @@
         <input name="tel_celular" class="form-control" type="text" id="tel_celular" size="40" /></label><br />
 
         <label>Descrição:
-        <input name="descricao" class="form-control" type="text" id="descricao" size="40" /></label><br />
+        <textarea rows="4" cols="42" name="descricao" class="form-control" type="text" id="descricao"/></textarea></label><br />
 
         <label>Horario de Funcionamento</label><br />
         <label>Inicio

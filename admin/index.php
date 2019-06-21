@@ -17,38 +17,37 @@
   <link href="css/sb-admin.css" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="../js/viacep.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	// Activate tooltip
-	$('[data-toggle="tooltip"]').tooltip();
 
-	// Select/Deselect checkboxes
-	var checkbox = $('table tbody input[type="checkbox"]');
-	$("#selectAll").click(function(){
-		if(this.checked){
-			checkbox.each(function(){
-				this.checked = true;
-			});
-		} else{
-			checkbox.each(function(){
-				this.checked = false;
-			});
-		}
-	});
-	checkbox.click(function(){
-		if(!this.checked){
-			$("#selectAll").prop("checked", false);
-		}
-	});
-});
-</script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+  	// Activate tooltip
+  	$('[data-toggle="tooltip"]').tooltip();
 
+  	// Select/Deselect checkboxes
+  	var checkbox = $('table tbody input[type="checkbox"]');
+  	$("#selectAll").click(function(){
+  		if(this.checked){
+  			checkbox.each(function(){
+  				this.checked = true;
+  			});
+  		} else{
+  			checkbox.each(function(){
+  				this.checked = false;
+  			});
+  		}
+  	});
+  	checkbox.click(function(){
+  		if(!this.checked){
+  			$("#selectAll").prop("checked", false);
+  		}
+  	});
+  });
+  </script>
 
 </head>
 
@@ -104,37 +103,26 @@ $(document).ready(function(){
                 <span>Instituições</span></h2>
         			</div>
         			<div class="col-sm-6">
-        			     <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Adicionar Novo</span></a>
+        			     <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
+                     <i class="fas fa-plus"></i><span>  Adicionar Novo</span>
+                   </a>
         					</div>
                         </div>
                     </div>
                     <table class="table table-striped table-hover">
                         <thead>
                             <tr>
+                                <th>Cod.</th>
                                 <th>Nome</th>
                                 <th>Responsavel</th>
         						            <th>Telefone</th>
                                 <th>Vistoria</th>
-                                <th>Ações</th>
+                                <th>Imagem</th>
+                                <th>Editar</th>
+                                <th>Excluir</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <!--<tr>
-                  						<td>
-                  							<span class="custom-checkbox">
-                  								<input type="checkbox" id="checkbox1" name="options[]" value="1">
-                  								<label for="checkbox1"></label>
-                  							</span>
-                  						</td>
-                              <td>Instituição 1</td>
-                              <td>email@mail.com</td>
-        						          <td>Rua X, 12 - Bairro - Cidade/MG</td>
-                              <td>(31) 3555-2222</td>
-                              <td>
-                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Editar">&#xE254;</i></a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Deletar">&#xE872;</i></a>
-                              </td>
-                            </tr>-->
                             <?php
                               include_once '../php/class/Instituicao.class.php';
                               $inst = new Instituicao();
@@ -145,69 +133,69 @@ $(document).ready(function(){
                 </div>
             </div>
 
-        	<!-- Edit Modal HTML -->
-          <div id="addEmployeeModal" class="modal fade">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <form method="POST" action="cadastrar.php">
-                  <div class="modal-header">
-                    <h4 class="modal-title">Adicionar Instituição</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                  </div>
-                  <div class="modal-body">
-                          <label>Nome:
-                          <input name="nome" class="form-control" type="text" id="nome" size="60" required/></label><br />
-
-                          <label>Responsavel:
-                          <input name="responsavel" class="form-control" type="text" id="responsavel" size="60" required/></label><br />
-
-                          <label>Cep:
-                          <input name="cep" class="form-control" type="text" id="cep" value="" size="10" maxlength="9"
-                                 onblur="pesquisacep(this.value);" required/></label>
-
-                          <label>Bairro:
-                          <input name="bairro" class="form-control" type="text" id="bairro" size="40" readonly="disabled"/></label><br />
-
-                          <label>Rua:
-                          <input name="rua" class="form-control" type="text" id="rua" size="60" readonly="disabled"/></label><br />
-
-                          <label>Numero:
-                          <input name="num_rua" class="form-control" type="number" id="num_rua" size="10" required/></label><br />
-
-                          <label>Cidade:
-                          <input name="cidade" class="form-control" type="text" id="cidade" size="40" readonly="disabled"/></label><br />
-
-                          <label>Estado:
-                          <input name="uf" class="form-control" type="text" id="uf" size="2" readonly="disabled"/></label><br />
-
-                          <label>E-mail:
-                          <input name="email" class="form-control" type="text" id="email" size="40" required/></label><br />
-
-                          <label>Telefone Fixo:
-                          <input name="tel_fixo" class="form-control" type="text" id="tel_fixo" size="40" required/></label><br />
-
-                          <label>Telefone Celular:
-                          <input name="tel_celular" class="form-control" type="text" id="tel_celular" size="40" /></label><br />
-
-                          <label>Descrição:
-                          <input name="descricao" class="form-control" type="text" id="descricao" size="40" /></label><br />
-
-                          <label>Horario de Funcionamento</label><br />
-                          <label>Inicio
-                          <input name="hr_inicio" type="time" class="form-control" type="text" id="hr_inicio" size="40" required/></label>
-
-                          <label>Fim
-                          <input name="hr_fim" type="time" class="form-control" type="text" id="hr_fim" size="40" required/></label><br />
-                          <div class="modal-footer">
-                            <input type="submit" class="btn btn-success" value="Adicionar">
-                            <a href="index.php" class="text-decoration-none"> <input type="button" class="btn btn-success" value="Cancelar"> </a>
-                          </div>
-                          <br><br>
-                          </form>
-                        </div>
+              <!-- Add Instituicao HTML -->
+              <div id="addEmployeeModal" class="modal fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <form method="POST" action="cadastrar.php">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Adicionar Instituição</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                       </div>
-                  </div>
-        			</div>
+                      <div class="modal-body">
+                              <label>Nome:
+                              <input name="nome" class="form-control" type="text" id="nome" size="60" required/></label><br />
+
+                              <label>Responsavel:
+                              <input name="responsavel" class="form-control" type="text" id="responsavel" size="60" required/></label><br />
+
+                              <label>Cep:
+                              <input name="cep" class="form-control" type="text" id="cep" value="" size="10" maxlength="9"
+                                     onblur="pesquisacep(this.value);" required/></label>
+
+                              <label>Bairro:
+                              <input name="bairro" class="form-control" type="text" id="bairro" size="40" readonly="disabled"/></label><br />
+
+                              <label>Rua:
+                              <input name="rua" class="form-control" type="text" id="rua" size="60" readonly="disabled"/></label><br />
+
+                              <label>Numero:
+                              <input name="num_rua" class="form-control" type="number" id="num_rua" size="10" required/></label><br />
+
+                              <label>Cidade:
+                              <input name="cidade" class="form-control" type="text" id="cidade" size="40" readonly="disabled"/></label><br />
+
+                              <label>Estado:
+                              <input name="uf" class="form-control" type="text" id="uf" size="2" readonly="disabled"/></label><br />
+
+                              <label>E-mail:
+                              <input name="email" class="form-control" type="text" id="email" size="40" required/></label><br />
+
+                              <label>Telefone Fixo:
+                              <input name="tel_fixo" class="form-control" type="text" id="tel_fixo" size="40" required/></label><br />
+
+                              <label>Telefone Celular:
+                              <input name="tel_celular" class="form-control" type="text" id="tel_celular" size="40" /></label><br />
+
+                              <label>Descrição:
+                              <textarea rows="4" cols="42" name="descricao" class="form-control" type="text" id="descricao"/></textarea></label><br />
+
+                              <label>Horario de Funcionamento</label><br />
+                              <label>Inicio
+                              <input name="hr_inicio" type="time" class="form-control" type="text" id="hr_inicio" size="40" required/></label>
+
+                              <label>Fim
+                              <input name="hr_fim" type="time" class="form-control" type="text" id="hr_fim" size="40" required/></label><br />
+                              <div class="modal-footer">
+                                <input type="submit" class="btn btn-success" value="Adicionar">
+                                <a href="index.php" class="text-decoration-none"> <input type="button" class="btn btn-success" value="Cancelar"> </a>
+                              </div>
+                              <br><br>
+                              </form>
+                            </div>
+                          </div>
+                      </div>
+            			</div>
 
         	<!-- Delete Modal HTML -->
         	<div id="deleteEmployeeModal" class="modal fade">

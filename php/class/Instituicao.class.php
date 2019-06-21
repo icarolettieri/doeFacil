@@ -261,29 +261,39 @@
 				foreach ($value as $dados) {
 					# code...
 					$str =
-					'<tr>
-                        <td>'.$dados['nome_inst'].'</td>
-                        <td>'.$dados['nome_respons'].'</td>
-        				<td>'.$dados['telefone'].'</td>
-        				<td>'.
-        					'<form method = "POST" action="../php/vistoria.php">
-        						<input type="hidden" name="id_inst" value="'.$dados['id_inst'].'">'.
-                        		$this->strVistotia($dados['vistoria'])
-		                    .'</form>'.
-        				'</td>
-                        <td>
-                        	<form method = "POST" action="../atualizarInstituicao.php">
-                        		<input type="hidden" name = "id_inst" value="'.$dados['id_inst'].'">
-		                        <button type="submit" class="btn btn-success btn-sm edit"><i class="material-icons"  title="Editar">&#xE254;</i></button>
-		                    </form>
-		                    </td>
-		                    <td>
-		                    <form method = "POST" action="../php/deletar.php">
-		                    	<input type="hidden" name = "id_inst" value="'.$dados['id_inst'].'">
-		                        <button type="submit" class="btn btn-success btn-sm delete"><i class="material-icons" title="Deletar">&#xE872;</i></button>
-		                    </form>
-                        </td>
-                    </tr>';
+								'<tr>
+										<td>'.$dados['id_inst'].'</td>
+                    <td>'.$dados['nome_inst'].'</td>
+                    <td>'.$dados['nome_respons'].'</td>
+        						<td>'.$dados['telefone'].'</td>
+        						<td>'.
+        							'<form method = "POST" action="../php/vistoria.php">
+        									<input type="hidden" name="id_inst" value="'.$dados['id_inst'].'">'.
+                        	$this->strVistotia($dados['vistoria'])
+		                	.'</form>'.
+        						'</td>
+										<td>
+											<form method = "POST" action="../insereImagem.php">
+	                    	<input type="hidden" name = "id_inst" value="'.$dados['id_inst'].'">
+			                  <button type="submit" class="btn btn-success btn-sm edit">
+												<i class="far fa-images"></i></button>
+			                </form>
+										</td>
+                    <td>
+											<form method = "POST" action="../atualizarInstituicao.php">
+	                    	<input type="hidden" name = "id_inst" value="'.$dados['id_inst'].'">
+			                  <button type="submit" class="btn btn-success btn-sm edit">
+												<i class="far fa-edit"></i></button>
+			                </form>
+		                </td>
+		                <td>
+			                <form method = "POST" action="../php/deletar.php">
+			                  <input type="hidden" name = "id_inst" value="'.$dados['id_inst'].'">
+			                  <button type="submit" class="btn btn-success btn-sm delete">
+												<i class="far fa-trash-alt"></i></button>
+			                </form>
+                    </td>
+                  </tr>';
                     echo $str;
 				}
 			}
@@ -302,7 +312,8 @@
 					'
 						<div class="col-lg-4 col-sm-6 portfolio-item">'.
 					        '<div class="card h-100">'.
-					          '<a href="#"><img class="card-img-top" style="height: 250px; width: max" src="img/img.jpg" alt=""></a>'.
+					          '<a href="#"><img class="card-img-top" style="height: 250px;
+										width: max" src="img/'.$instituicao['id_inst'].'.jpg" alt=""></a>'.
 					          '<div class="card-body">'.
 					            '<h4 class="card-title">'.
 												'<p>'.$instituicao['nome_inst'].'</p>'.'</h4>'.

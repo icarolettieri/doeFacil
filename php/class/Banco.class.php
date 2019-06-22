@@ -5,7 +5,7 @@
 		public function __construct(){
 			$this->pdo = new PDO("mysql:
 														dbname=u776920662_pidoe;
-														host=auth-db210.weblink.com.br",
+														host=sql210.main-hosting.eu",
 														"u776920662_icaro",
 														"DoeFacil123");
 		}

@@ -9,7 +9,7 @@
   <meta name="author" content="">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="shortcut icon" href="../img/favicon.ico" />
 
   <title>DoeFácil</title>
 
@@ -32,7 +32,7 @@
             <h5 class="card-title text-center">Login</h5>
 
             <form method="POST" class="form-signin">
-            
+
 
               <div class="form-label-group">
                 <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>

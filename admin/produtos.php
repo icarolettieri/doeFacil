@@ -17,38 +17,42 @@
   <link href="css/sb-admin.css" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/viacep.js"></script>
 
-<script type="text/javascript">
-$(document).ready(function(){
-	// Activate tooltip
-	$('[data-toggle="tooltip"]').tooltip();
+  <script type="text/javascript">
+  $(document).ready(function(){
+  	// Activate tooltip
+  	$('[data-toggle="tooltip"]').tooltip();
 
-	// Select/Deselect checkboxes
-	var checkbox = $('table tbody input[type="checkbox"]');
-	$("#selectAll").click(function(){
-		if(this.checked){
-			checkbox.each(function(){
-				this.checked = true;
-			});
-		} else{
-			checkbox.each(function(){
-				this.checked = false;
-			});
-		}
-	});
-	checkbox.click(function(){
-		if(!this.checked){
-			$("#selectAll").prop("checked", false);
-		}
-	});
-});
-</script>
-
+  	// Select/Deselect checkboxes
+  	var checkbox = $('table tbody input[type="checkbox"]');
+  	$("#selectAll").click(function(){
+  		if(this.checked){
+  			checkbox.each(function(){
+  				this.checked = true;
+  			});
+  		} else{
+  			checkbox.each(function(){
+  				this.checked = false;
+  			});
+  		}
+  	});
+  	checkbox.click(function(){
+  		if(!this.checked){
+  			$("#selectAll").prop("checked", false);
+  		}
+  	});
+  });
+  </script>
+  <?php
+    include_once '../php/class/Usuario.class.php';
+    $uso = new Usuario();
+    $uso->verificacaoLogin();
+  ?>
 
 </head>
 

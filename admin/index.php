@@ -48,6 +48,11 @@
   	});
   });
   </script>
+  <?php
+    include_once '../php/class/Usuario.class.php';
+    $uso = new Usuario();
+    $uso->verificacaoLogin();
+  ?>
 
 </head>
 

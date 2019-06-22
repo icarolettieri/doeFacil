@@ -273,14 +273,14 @@
 		                	.'</form>'.
         						'</td>
 										<td>
-											<form method = "POST" action="../insereImagem.php">
+											<form method = "POST" action="../admin/insereImagem.php">
 	                    	<input type="hidden" name = "id_inst" value="'.$dados['id_inst'].'">
 			                  <button type="submit" class="btn btn-success btn-sm edit">
 												<i class="far fa-images"></i></button>
 			                </form>
 										</td>
                     <td>
-											<form method = "POST" action="../atualizarInstituicao.php">
+											<form method = "POST" action="../admin/atualizarInstituicao.php">
 	                    	<input type="hidden" name = "id_inst" value="'.$dados['id_inst'].'">
 			                  <button type="submit" class="btn btn-success btn-sm edit">
 												<i class="far fa-edit"></i></button>

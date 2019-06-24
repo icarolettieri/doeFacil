@@ -312,19 +312,18 @@
 					'
 						<div class="col-lg-4 col-sm-6 portfolio-item">'.
 					        '<div class="card h-100">'.
-					          '<a href="#"><img class="card-img-top" style="height: 250px;
-										width: max" src="img/'.$instituicao['id_inst'].'.jpg" alt=""></a>'.
+					          '<img class="card-img-top" style="height: 250px;
+										width: max" src="img/'.$instituicao['id_inst'].'.jpg" alt="">'.
 					          '<div class="card-body">'.
 					            '<h4 class="card-title">'.
 												'<p>'.$instituicao['nome_inst'].'</p>'.'</h4>'.
 					              '<p>Responsavel: '.$instituicao['nome_respons'].'</p>'.
 					              '<p>'.$instituicao['rua'].', '.$instituicao['numero'].
 												'<br>'.$instituicao['bairro'].' - '.$instituicao['cidade'].'</p>'.
-								  '<p> Telefone: '.$instituicao['telefone'].'</p>'.
-									'<p> Celular: '.$instituicao['celular'].'</p>'.
-								  '<p> Horario: '.$instituicao['horario_abertura'].'-'.
-									$instituicao['horario_fechamento'].'</p>'.
-					            '
+								  			'<p> Telefone: '.$instituicao['telefone'].'</p>'.
+												'<p> Celular: '.$instituicao['celular'].'</p>'.
+								  			'<p> Horario: '.$instituicao['horario_abertura'].'-'.
+												$instituicao['horario_fechamento'].'</p>'.'
 					           </div>
 					        </div>
 					    </div>';

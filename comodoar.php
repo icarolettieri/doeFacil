@@ -75,7 +75,7 @@
     <label for="sel1">Selecione por onde deseja pesquisar:</label>
     <form method="POST">
       <div class="row">
-        <div class="col-3">
+        <div class="col-4">
           <select name="tipo" class="form-control" id="sel1">
             <option value="1">Bairro</option>
             <option value="2">Cidade</option>

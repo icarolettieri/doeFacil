@@ -19,6 +19,13 @@
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
 
+  <script>
+      function funcao1()
+      {
+      alert("Mensagem enviada, dentro de algumas horas entraremos em contato com você. :)");
+      }
+  </script>
+
 </head>
 
 <body>
@@ -57,7 +64,7 @@
 <div class="container">
     <div class="row justify-content-md-center">
 
-      <form method="POST" action="php/enviarEmail.php">
+      <form method="POST">
 
         <h4>Entre em conato conosco!</h4>
         <h5>Mande uma menssagem.</br></br>
@@ -67,12 +74,11 @@
         <input name="assunto" class="form-control" type="text" id="assunto" size="60" required/></label><br />
         <label>Mensagem:
         <textarea rows="4" cols="63" name="mensagem" class="form-control" type="text" id="mensagem"/></textarea></label><br />
-        <input type="submit" class="btn btn-success" value="Enviar">
+        <input type="submit" onclick="funcao1()" class="btn btn-success" value="Enviar">
         <br><br><br><br>
-        </div>
       </form>
     </div>
-  </div>
+</div>
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">

@@ -22,21 +22,6 @@
 </head>
 
 <body>
-    <!-- Page Content -->
-  <div class="container">
-    <br><br>
-    <h1 class="my-5">Quem somos?</h1>
-    <p class="my-8">Somos estudantes de sistemas de informação na instituição Una de Contagem/MG e este site foi desenvolvido com o intuito de ajudar a sociedade. Sendo assim escolhemos como tema doação; então aqui você pode consultar locais próximos da sua casa que recebem doaçoes ou se você é uma instituição de caridade cadastre-se para que possiveis doadores vejam seu perfil! :)</p>
-
-    <br><hr><br>
-
-    <iframe src="https://onedrive.live.com/embed?cid=6F12A66DF74AA4ED&amp;resid=6F12A66DF74AA4ED%219717&amp;authkey=AIqiy2g8X6C7ipw&amp;em=2&amp;wdAr=1.7777777777777777" width="1186px" height="691px" frameborder="0">Este é um apresentação do <a target="_blank" href="https://office.com">Microsoft Office</a> incorporado, da plataforma <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
-
-  </div>
-
-  <br><br><br><br>
-
-
   <!-- Navigation -->
   <nav class="navbar bg-white navbar-expand-md fixed-top navbar-light nav-pills border-bottom" style="border-color: #74cfae">
     <div class="container">
@@ -67,6 +52,27 @@
     </div>
   </nav>
   <!-- /.nav -->
+
+    <!-- Page Content -->
+  </br></br>
+  <div class="container">
+      <h1 class="my-5">Quem somos?</h1>
+      <p class="col-8">
+        Somos estudantes de sistemas de informação na instituição Una de Contagem/MG e este site foi desenvolvido com o
+        intuito de ajudar a sociedade. Sendo assim escolhemos como tema doação; então aqui você pode consultar locais
+        próximos da sua casa que recebem doaçoes ou se você é uma instituição de caridade cadastre-se para que possiveis
+        doadores vejam seu perfil! :)
+      </p>
+    </br>
+    <div class="row justify-content-md-center">
+    <h5 class="my-5">Abaixo, segue nossa apresentação em PowerPoint.</h5></div>
+    </br>
+      <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://onedrive.live.com/embed?cid=6F12A66DF74AA4ED&amp;resid=6F12A66DF74AA4ED%219717&amp;authkey=AIqiy2g8X6C7ipw&amp;em=2&amp;wdAr=1.7777777777777777" frameborder="0"></iframe>
+      </div>
+  </div>
+
+  <br><br><br><br>
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">

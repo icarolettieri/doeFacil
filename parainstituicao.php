@@ -21,6 +21,12 @@
 
   <!-- Adicionando Javascript -->
   <script type="text/javascript" src="js/viacep.js"></script>
+  <script>
+      function funcao1()
+      {
+      alert("Pre-Cadastro realizado, dentro de 48 horas entraremos em contato com você agendando uma visita. :)");
+      }
+  </script>
 
 </head>
 
@@ -130,7 +136,7 @@
         <label>Fim
         <input name="hr_fim" type="time" class="form-control" type="text" id="hr_fim" size="40" required/></label><br />
 
-        <input type="submit" class="btn btn-success" value="Cadastrar">
+        <input type="submit" onclick="funcao1()" class="btn btn-success" value="Cadastrar">
         <br><br><br><br>
         </div>
       </form>

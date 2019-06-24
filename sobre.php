@@ -64,8 +64,8 @@
         doadores vejam seu perfil! :)
       </p>
     </br>
-    <div class="row justify-content-md-center">
-    <h5 class="my-5">Abaixo, segue nossa apresentação em PowerPoint.</h5></div>
+    <div class="row">
+    <h5 class="text-center col-12">Abaixo, segue nossa apresentação em PowerPoint.</h5></div>
     </br>
       <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="https://onedrive.live.com/embed?cid=6F12A66DF74AA4ED&amp;resid=6F12A66DF74AA4ED%219717&amp;authkey=AIqiy2g8X6C7ipw&amp;em=2&amp;wdAr=1.7777777777777777" frameborder="0"></iframe>

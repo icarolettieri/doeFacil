@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -53,8 +53,26 @@
     </div>
   </nav>
   <!-- /.nav -->
+</br></br></br>
+<div class="container">
+    <div class="row justify-content-md-center">
 
-</br></br>
+      <form method="POST" action="php/enviarEmail.php">
+
+        <h4>Entre em conato conosco!</h4>
+        <h5>Mande uma menssagem.</br></br>
+        <label>Nome:
+        <input name="nome" class="form-control" type="text" id="nome" size="60" required/></label><br />
+        <label>Assunto:
+        <input name="assunto" class="form-control" type="text" id="assunto" size="60" required/></label><br />
+        <label>Mensagem:
+        <textarea rows="4" cols="63" name="mensagem" class="form-control" type="text" id="mensagem"/></textarea></label><br />
+        <input type="submit" class="btn btn-success" value="Enviar">
+        <br><br><br><br>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">

@@ -81,9 +81,9 @@
 </div>
     <!-- Portfolio Section -->
 <div class="container">
-    <div class="row justify-content-md-center">
+    <div class="row">
 
-      <form method="POST" action="php/cadastrar.php">
+      <form method="POST" class="col-12" action="php/cadastrar.php">
 
         <h4>Realizar Pre-Cadastro da Instituição</h4><br>
         <label>Nome:

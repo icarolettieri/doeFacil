@@ -62,9 +62,8 @@
   <!-- /.nav -->
 </br></br></br>
 <div class="container">
-    <div class="row justify-content-md-center">
-
-      <form method="POST">
+    <div class="row">
+      <form method="POST" class="col-12">
 
         <h4>Entre em conato conosco!</h4>
         <h5>Mande uma menssagem.</br></br>

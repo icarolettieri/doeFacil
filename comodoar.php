@@ -75,7 +75,7 @@
     <label for="sel1">Selecione por onde deseja pesquisar:</label>
     <form method="POST">
       <div class="row">
-        <div class="col-4">
+        <div class="col-5">
           <select name="tipo" class="form-control" id="sel1">
             <option value="1">Bairro</option>
             <option value="2">Cidade</option>
@@ -85,7 +85,7 @@
         <div class="col-5">
           <input name="pesquisa" type="text" id="inputPesquisa" class="form-control" placeholder="Digite sua pesquisa: Cidade ou Bairro ou Estado. Ex: MG">
         </div>
-        <div class="col-3">
+        <div class="col-2">
           <button class="btn btn-success" type="submit">
             <i class="fas fa-search-location fa-lg"></i>
           </button>

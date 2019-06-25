@@ -15,6 +15,7 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
@@ -60,13 +61,13 @@
     </div>
   </nav>
   <!-- /.nav -->
-</br></br></br>
+</br></br>
 <div class="container">
     <div class="row">
       <form method="POST" class="col-12">
 
-        <h4>Entre em conato conosco!</h4>
-        <h5>Mande uma menssagem.</br></br>
+        <h1 class="my-5">Entre em contato conosco <i class="fas fa-envelope-open-text"></i></h1>
+        <h4 class="my-5">Mande uma menssagem.</br></br>
         <label>Nome:
         <input name="nome" class="form-control" type="text" id="nome" size="60" required/></label><br />
         <label>Assunto:

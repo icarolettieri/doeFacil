@@ -15,18 +15,11 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
 
-  <!-- Adicionando Javascript -->
-  <script type="text/javascript" src="js/viacep.js"></script>
-  <script>
-      function funcao1()
-      {
-      alert("Pre-Cadastro realizado, dentro de 48 horas entraremos em contato com você agendando uma visita. :)");
-      }
-  </script>
 
 </head>
 
@@ -66,7 +59,7 @@
   <!-- Page Content -->
   <div class="container">
     <br><br>
-    <h1 class="my-5">Faça parte desta historia!</h1>
+    <h1 class="my-5">Faça parte desta historia <i class="far fa-grin-beam"></i></h1>
     <p class="col-8">
       Agradecemos pelo seu interesse de se juntar a essa história, juntos vamos transformar.
     </p><br>

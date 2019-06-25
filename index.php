@@ -15,9 +15,11 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
+
 
 </head>
 
@@ -29,7 +31,7 @@
     <a class="navbar-brand" href="index.php"><img src="img\logo.png" class="float-left" alt="Logo DoeFácil"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
     aria-controls="navbarToggler" aria-expanded="false" aria-label="Alterna navegação">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon" style="border-color: success"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarToggler">
       <ul class="navbar-nav ml-auto">
@@ -65,7 +67,7 @@
         <!-- Slide One - Set the background image for this slide in the line below -->
         <div class="carousel-item active" style="background-image: url('img/slider1.jpg')">
           <div class="carousel-caption d-none d-md-block">
-            <h3 class="text-dark">Já pensou em doar?</h3>
+            <h3 class="text-dark">Já pensou em doar? <i class="fas fa-hand-holding-heart"></i></h3>
             <p class="text-dark"></p>
             <a href="comodoar.php">
             <button class="btn btn-sm btn-success my-2 my-sm-0">Saiba mais</button></a>
@@ -74,7 +76,7 @@
         <!-- Slide Two - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('img/slider2.jpg')">
           <div class="carousel-caption d-none d-md-block">
-            <h3 class="text-dark">Faça parte desta historia!</h3>
+            <h3 class="text-dark">Faça parte desta historia! <i class="far fa-grin-beam"></i></h3>
             <p class="text-dark">Você possui uma Instituição e deseja cadastra-la?</p>
             <a href="parainstituicao.php">
             <button class="btn btn-sm btn-success my-2 my-sm-0">Saiba mais</button></a>
@@ -83,7 +85,7 @@
         <!-- Slide Three - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('img/slider3.jpg')">
           <div class="carousel-caption d-none d-md-block">
-            <h3 class="text-dark">Possui algum projeto que possamos ajudar?</h3>
+            <h3 class="text-dark">Possui algum projeto que possamos ajudar<i class="fas fa-question"></i></h3>
             <p class="text-dark">Entre em contato.</p>
             <a href="contato.php">
             <button class="btn btn-sm btn-success my-2 my-sm-0" type="submit">Contato</button></a>
@@ -110,11 +112,11 @@
     <div class="row">
       <div class="col-lg-6 text-center">
         <br>
-        <h2>O que fazemos</h2>
+        <h2>O que fazemos <i class="far fa-grin-stars"></i></h2>
         <p>Nosso projeto foi criado pensando nas pessoas que querem
           ajudar mas não sabe como, onde e quando.</p>
         <p>
-          Desta forma foi nasceu o DoeFácil, para você, que deseja ajudar
+          Desta forma, nasceu o DoeFácil, para você, que deseja ajudar
           nos vamos de mostrar como uma simples ação faz toda a diferença.
         </p>
       </div>

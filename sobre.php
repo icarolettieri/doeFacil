@@ -15,13 +15,16 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
 
+
 </head>
 
 <body>
+
   <!-- Navigation -->
   <nav class="navbar bg-white navbar-expand-md fixed-top navbar-light nav-pills border-bottom" style="border-color: #74cfae">
     <div class="container">
@@ -56,7 +59,7 @@
     <!-- Page Content -->
   </br></br>
   <div class="container">
-      <h1 class="my-5">Quem somos?</h1>
+      <h1 class="my-5">Quem somos? <i class="fas fa-users"></i></h1>
       <p class="col-8">
         Somos estudantes de sistemas de informação na instituição Una de Contagem/MG e este site foi desenvolvido com o
         intuito de ajudar a sociedade. Sendo assim escolhemos como tema doação; então aqui você pode consultar locais

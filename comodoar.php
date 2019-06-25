@@ -15,10 +15,11 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/4d5cbafde0.js"></script>
+
 
 </head>
 
@@ -58,7 +59,7 @@
   <!-- Page Content -->
   <div class="container">
     <br><br>
-    <h1 class="my-5">Como Doar</h1>
+    <h1 class="my-5">Como Doar <i class="fas fa-boxes"></i></h1>
     <p class="col-8">
       Nesta sessão você irá localizar a Instituição de doação de melhor acesso para você,
       nos campos abaixo você pode selecionar por onde deseja pesquisar, se é pelo Bairro, Cidade, Estado,

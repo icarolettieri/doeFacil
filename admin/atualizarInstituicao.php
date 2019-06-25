@@ -158,7 +158,7 @@
         <input value="<?php echo $dados['celular'] ?>" name="celular" class="form-control" type="text" id="tel_celular" size="40" /></label><br />
 
         <label>Descrição:
-        <textarea rows="4" cols="42" value="<?php echo $dados['descricao'] ?>" name="descricao" class="form-control" type="text" id="descricao"/></label><br />
+        <textarea rows="4" cols="42" value="<?php echo $dados['descricao'] ?>" name="descricao" class="form-control" type="text" id="descricao"/></textarea></label><br />
 
         <label>Horario de Funcionamento</label><br />
         <label>Inicio
